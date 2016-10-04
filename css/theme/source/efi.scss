@@ -1,0 +1,107 @@
+/**
+ * Efi theme for reveal.js.
+ */
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+@import "../template/theme"; // ---------------------------------------------
+// Include theme-specific fonts
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic); // Override theme settings (see ../template/settings.scss)
+$mainColor: #333;
+$headingColor: #333;
+$headingTextShadow: none; // $backgroundColor: #f7f3de;
+$linkColor: #ccc;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(79, 64, 28, 0.99); // $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+// Background generator
+@mixin bodyBackground() {
+   @include radial-gradient( rgba(247,242,211,1), rgba(255,255,255,1) );
+}
+
+.reveal {
+  background: url('../../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  // .reveal .slides section .fragment.highlight-olive,
+  // .reveal .slides section .fragment.highlight-current-olive {
+  // 	opacity: 1;
+  // 	visibility: visible;
+  // }
+  //
+  // .fragment.highlight-current-olive.visible {
+  //   color: #49afa2;
+  // }
+  .slides {
+    h1,
+    h2,
+    li,
+    p,
+    ul {
+      color: #fff;
+      font-family: 'Roboto Condensed', sans-serif;
+
+      &.small {
+        font-size: 0.8em;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+      }
+
+      &.nomargin {
+        margin: 0;
+        padding: 0;
+      }
+      // text-transform: none;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      letter-spacing: -0.05em;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      text-transform: none;
+
+      &.lead {
+        color: #e1e7c3;
+      }
+    }
+
+    p {
+      font-size: 1em;
+      text-transform: none;
+
+      &.author {
+        font-size: 0.8em;
+      }
+    }
+
+    a {
+      color: #49afa2;
+      text-decoration: none;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &.end {
+          align-items: flex-end;
+        }
+      }
+    }
+  }
+}
+// Theme template ------------------------------
+@import "../template/theme"; // ---------------------------------------------

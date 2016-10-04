@@ -1,0 +1,475 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>PS presentation</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/efi.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section data-transition="slide">
+				<h1>Photoshop - przyjaciel webdeva</h1>
+				<h2 class="lead">czyli jak dziabnąć layout bez nerwicy</h2><br /><br />
+				<p class="author">
+					K. Otrębska @ <a href="http://www.efigence.com">efigence</a>
+				</p>
+			</section>
+
+			<section data-transition="slide">
+				<section data-transition="slide">
+					<h2>Interface - must have</h2>
+				</section>
+				<section data-transition="slide">
+					<img src="img/workspace.jpg" />
+				</section>
+				<section>
+					<h2>Tools panel</h2>
+					<ul class="fragment small">
+						<li>
+							<p class="small fragment highlight-blue">
+								Move (V)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-blue">
+								Marquee (M)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-blue">
+								Lasso (L)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Quick selection / Magic wand (W)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-blue">
+								Crop / Slice (C)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-blue">
+								Eyedropper / Ruler (I)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Healing brush (J)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Brush (B)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Stamp (S)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								History brush (Y)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Erase (E)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Gradient / Paint bucket (G)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Blur / Sharpen / Smudge
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Dodge / Burn (O)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Pen (P)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-blue">
+								Text (T)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Path selection (A)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Shape / Line (U)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-blue">
+								Pan (Space)
+							</p>
+						</li>
+						<li>
+							<p class="small fragment highlight-current-blue">
+								Zoom (Z)
+							</p>
+						</li>
+					</ul>
+					<!-- <img src="img/workspace.jpg" /> -->
+				</section>
+				<section>
+					<h2>Tools panel - must have</h2>
+					<ul class="">
+						<li>
+							<p class="">
+								Move (V)
+							</p>
+						</li>
+						<li>
+							<p class=""> Marquee (M)
+							</p>
+						</li>
+						<li>
+							<p class=""> Lasso (L)
+							</p>
+						</li>
+						<li>
+							<p class=""> Crop / Slice (C)
+							</p>
+						</li>
+						<li>
+							<p class=""> Eyedropper / Ruler (I)
+							</p>
+						</li>
+						<li>
+							<p class=""> Text (T)
+							</p>
+						</li>
+						<li>
+							<p class=""> Pan (Space)
+							</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>(useful)<br />
+						Shortcuts with tool active</h2>
+				</section>
+				<section>
+					<h2>Move (V)</h2>
+					<div class="container">
+						<div class="column">
+							<ul>
+								<li>
+									<p>alt + right mouse click - select top layer </p>
+								</li>
+								<li>
+									<p>right mouse click - visible layers</p>
+								</li>
+							</ul>
+						</div>
+						<div class="column">
+							<img src="img/move.jpg" />
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>Brush (B)</h2>
+					<p>alt - Eyedropper tool</p>
+				</section>
+				<section>
+					<h2>Slice (C)</h2>
+					<p>Slice from guides</p>
+					<img src="img/slice-from-guides.jpg" />
+					<p class="small fragment">
+						Mailingi!
+					</p>
+				</section>
+				<section>
+					<h2>Other shortcuts</h2>
+					<ul>
+						<li class="small fragment">
+							<p class="small">Shift + (tool shortcut) - change tools</p>
+						</li>
+						<li class="small fragment">
+							<p class="small">Space - pan</p>
+						</li>
+						<li class="small fragment">
+							<p class="small">Ctrl - move</p>
+						</li>
+						<li class="small fragment">
+							<p class="small">Ctrl + R - toggle rulers</p>
+						</li>
+						<li class="small fragment">
+							<p class="small">Ctrl + ; - toggle guidelines</p>
+						</li>
+						<li class="small fragment">
+							<p class="small">Ctrl + ‘ - toggle grid</p>
+						</li>
+						<li class="small fragment">
+							<p class="small">Ctrl + D - deselect</p>
+						</li>
+						<li class="small fragment">
+							<p class="small">Ctrl + Shift + I - reverse selection</p>
+						</li>
+						<li class="small fragment">
+							<p class="small">Ctrl + Alt + I - image size</p>
+						</li>
+						<li class="small fragment">
+							<p class="small">Ctrl + Alt + C - canvas size</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Panels</h2>
+				</section>
+				<section>
+					<h2>Active tool panel</h2>
+					<img src="img/active-tool.jpg" />
+				</section>
+				<section>
+					<h2>Character</h2>
+
+					<div class="container">
+
+						<div class="column">
+							<ul class="fragment">CSS:
+								<li class="fragment nomargin">
+									<p class="small">font-family</p>
+								</li>
+								<li class="fragment nomargin">
+									<p class="small">font-size</p>
+								</li>
+								<li class="fragment nomargin">
+									<p class="small">line-height</p>
+								</li>
+								<li class="fragment nomargin">
+									<p class="small">letter-spacing</p>
+								</li>
+								<li class="fragment nomargin">
+									<p class="small">font-weight</p>
+								</li>
+								<li class="fragment nomargin">
+									<p class="small">font-style /italic/</p>
+								</li>
+								<li class="fragment small">
+									<p class="nomargin">text-decoration</p>
+									<ul>
+										<li class="small">
+											underline
+										</li>
+										<li class="small">
+											line-through
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="column fragment">
+							<img src="img/character.jpg" />
+							<p class="small">
+								<ul>
+									Shortcuts:
+									<li>
+										T - text tool
+									</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>Info</h2>
+					<div class="container">
+						<div class="column fragment">
+							<img class="fragment" src="img/info.jpg" />
+							<p class="small fragment">
+								<ul class="fragment">
+									Shortcuts:
+									<li class="fragment">
+										M (marquee tool)
+									</li>
+									<li class="fragment">
+										ctrl + left mouse click (layer marquee)
+									</li>
+								</ul>
+							</p>
+						</div>
+						<div class="column">
+							<ul class="fragment">CSS:
+								<li class="fragment nomargin">
+									<p class="small">rgb (rgba)</p>
+								</li>
+								<li class="fragment nomargin">
+									<p class="small">width + height</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>Layers</h2>
+					<div class="container">
+						<div class="column">
+							<ul class="fragment">CSS:
+								<li class="fragment">
+									<p class="small">opacity</p>
+								</li>
+								<li class="fragment">
+									<p class="small">z-index</p>
+								</li>
+							</ul>
+						</div>
+						<div class="column end">
+							<img class="fragment" src="img/layers.jpg" />
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>Layers - types</h2>
+					<div class="container">
+						<div class="column">
+							<ul class="">
+								<li class="fragment">
+									<p class="small">layer</p>
+								</li>
+								<li class="fragment">
+									<p class="small">shape (+layer mask)</p>
+								</li>
+								<li class="fragment">
+									<p class="small">text</p>
+								</li>
+								<li class="fragment">
+									<p class="small">intelligent object</p>
+								</li>
+							</ul>
+						</div>
+						<div class="column end">
+							<img class="fragment" src="img/layers_types.jpg" />
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>Layers - actions</h2>
+					<div class="container">
+						<div class="column">
+							<ul class="">
+								<li class="fragment">
+									<p class="small">link layers</p>
+								</li>
+								<li class="fragment">
+									<p class="small">layer style</p>
+								</li>
+								<li class="fragment">
+									<p class="small">layer mask</p>
+								</li>
+								<li class="fragment">
+									<p class="small">group layers <br />(Ctrl + G)</p>
+								</li>
+								<li class="fragment">
+									<p class="small">new layer <br />(Ctrl + Shift + N)</p>
+								</li>
+								<li class="fragment">
+									<p class="small">delete layer</p>
+								</li>
+							</ul>
+						</div>
+						<div class="column end">
+							<img class="fragment" src="img/layers_types.jpg" />
+							<p class="small fragment">
+								<ul class="fragment small">
+									Shortcuts:
+									<li class="fragment small">
+										Alt + left mouse click (on visibility eye) <br />- show only this layer
+									</li>
+									<li class="fragment small">
+										Right mouse click (on visibility eye) <br />- show/hide all
+									</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>History</h2>
+					<img class="fragment" src="img/history_.jpg" />
+				</section>
+			</section>
+
+<section>
+	<h2>thx!</h2>
+	<img class="fragment" src="img/cat.jpg" />
+</section>
+
+
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+				src: 'plugin/markdown/marked.js'
+			}, {
+				src: 'plugin/markdown/markdown.js'
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				callback: function() {
+					hljs.initHighlightingOnLoad();
+				}
+			}]
+		});
+	</script>
+</body>
+
+</html>
